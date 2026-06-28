@@ -1,8 +1,7 @@
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import SiteScripts from '@/components/SiteScripts'
 
-const LocationMap = dynamic(() => import('@/components/LocationMap'), { ssr: false })
+import LocationMap from '@/components/LocationMap'
 
 export default function Home() {
   return (
