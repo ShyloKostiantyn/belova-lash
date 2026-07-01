@@ -1,3 +1,4 @@
+import GoogleAdsTag from './GoogleAdsTag'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -76,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>{children}<GoogleAdsTag /></body>
     </html>
   )
 }
