@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — BELOVA Lash Brand',
-  description: 'Privacy Policy for BELOVA Lash Brand website and booking services.',
+  title: 'Privacy Policy — Belova Lash Studio',
+  description: 'Privacy Policy for Belova Lash Studio website and booking services.',
   robots: { index: true, follow: true },
 }
 
@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
       }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', gap: '14px' }}>
           <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-            <img src="/images/logo.png" alt="Belova Lash Brand logo" style={{ width: '40px', height: 'auto', opacity: 0.95 }} />
+            <img src="/images/logo.png" alt="Belova Lash Studio logo" style={{ width: '40px', height: 'auto', opacity: 0.95 }} />
             <span style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: '1.4rem', color: '#f5d68f', fontWeight: 600 }}>Belova</span>
           </a>
         </div>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
         <div style={{ color: 'rgba(245,240,230,0.85)', lineHeight: 1.8, fontSize: '1rem' }}>
 
           <Section title="1. Who We Are">
-            <p>BELOVA Lash Brand (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates the website <strong style={{ color: '#f5d68f' }}>belovalash.ca</strong> and provides eyelash extension services and professional lash supplies.</p>
+            <p>Belova Lash Studio (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates the website <strong style={{ color: '#f5d68f' }}>belovalash.ca</strong> and provides eyelash extension services and professional lash supplies.</p>
             <p style={{ marginTop: '12px' }}>Studio address: 92 Lakeshore Rd E, Unit 5A, Mississauga, ON L5G 4S2, Canada<br />
             Contact email: <a href="mailto:majgik4@gmail.com" style={{ color: '#c9a35f' }}>majgik4@gmail.com</a><br />
             Phone: <a href="tel:+12897954370" style={{ color: '#c9a35f' }}>+1 (289) 795-4370</a></p>
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
           <Section title="11. Contact Us">
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <p style={{ marginTop: '12px' }}>
-              <strong style={{ color: '#f5d68f' }}>BELOVA Lash Brand</strong><br />
+              <strong style={{ color: '#f5d68f' }}>Belova Lash Studio</strong><br />
               92 Lakeshore Rd E, Unit 5A, Mississauga, ON L5G 4S2<br />
               <a href="mailto:majgik4@gmail.com" style={{ color: '#c9a35f' }}>majgik4@gmail.com</a><br />
               <a href="tel:+12897954370" style={{ color: '#c9a35f' }}>+1 (289) 795-4370</a>

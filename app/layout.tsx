@@ -3,23 +3,23 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'BELOVA Lash Brand — Eyelash Extensions & Lash Supplies | Mississauga & Toronto',
+  title: 'Belova Lash Studio — Eyelash Extensions & Lash Supplies | Mississauga & Toronto',
   description:
     "Maryna Belova's eyelash extension studio and her own line of professional lash supplies, BELOVA Lash Brand. Mississauga & Toronto.",
   keywords:
     'eyelash extensions Mississauga, eyelash extensions Toronto, lash studio Port Credit, classic volume hybrid lashes, lash supplies, professional lash adhesive, Belova Lash Brand, Maryna Belova',
-  authors: [{ name: 'Belova Lash Brand' }],
+  authors: [{ name: 'Belova Lash Studio' }],
   openGraph: {
     type: 'website',
-    siteName: 'Belova Lash Brand',
-    title: 'BELOVA Lash Brand — Eyelash Extensions & Lash Supplies | Mississauga & Toronto',
+    siteName: 'Belova Lash Studio',
+    title: 'Belova Lash Studio — Eyelash Extensions & Lash Supplies | Mississauga & Toronto',
     description:
       'Eyelash extension studio and professional lash supply brand founded by Maryna Belova. 9,500+ clients served, 5.0★ rating. Mississauga & Toronto, Ontario.',
     locale: 'en_CA',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BELOVA Lash Brand — Eyelash Extensions & Lash Supplies',
+    title: 'Belova Lash Studio — Eyelash Extensions & Lash Supplies',
     description:
       'Eyelash extension studio and professional lash supply brand founded by Maryna Belova. Mississauga & Toronto, Ontario.',
   },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
-  name: 'BELOVA Lash Brand',
-  alternateName: 'Belova Lash Studio',
+  name: 'Belova Lash Studio',
+  alternateName: 'BELOVA Lash Brand',
   description:
     'Eyelash extension studio and professional lash supply brand founded by Maryna Belova, serving Mississauga and Toronto.',
   telephone: '+1-289-795-4370',

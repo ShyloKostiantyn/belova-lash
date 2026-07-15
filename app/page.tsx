@@ -12,10 +12,10 @@ export default function Home() {
 <header>
   <div className="header-inner">
     <a href="#top" className="brand">
-      <img src="/images/logo.png" alt="Belova Lash Brand" />
+      <img src="/images/logo.png" alt="Belova Lash Studio" />
       <span>
         <span className="word">Belova</span>
-        <span className="sub">Lash Brand · Studio</span>
+        <span className="sub">Lash Studio</span>
       </span>
     </a>
     <nav className="main-nav">
@@ -418,7 +418,7 @@ export default function Home() {
         <div className="addr-block">
           <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <div>
-            <b>BELOVA Lash Brand</b>
+            <b>Belova Lash Studio</b>
             <span>92 Lakeshore Rd E, Unit 5A<br />Mississauga, ON L5G 4S2</span>
           </div>
         </div>
@@ -444,8 +444,8 @@ export default function Home() {
     <div className="footer-grid">
       <div className="footer-brand">
         <a href="#top" className="brand">
-          <img src="/images/logo.png" alt="Belova Lash Brand" />
-          <span><span className="word">Belova</span><span className="sub">Lash Brand · Studio</span></span>
+          <img src="/images/logo.png" alt="Belova Lash Studio" />
+          <span><span className="word">Belova</span><span className="sub">Lash Studio</span></span>
         </a>
         <p>Maryna Belova's eyelash extension studio and her own line of professional lash supplies. Mississauga &amp; Toronto.</p>
       </div>
@@ -469,7 +469,7 @@ export default function Home() {
       </div>
     </div>
     <div className="footer-bottom">
-      <span>© 2026 Belova Lash Brand. All rights reserved.</span>
+      <span>© 2026 Belova Lash Studio. All rights reserved.</span>
       <span>Mississauga · Toronto, Ontario</span>
     </div>
   </div>
