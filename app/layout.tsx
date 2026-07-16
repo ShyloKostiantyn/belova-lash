@@ -1,3 +1,4 @@
+import PromoModal from './PromoModal'
 import GoogleAdsTag from './GoogleAdsTag'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -77,7 +78,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}<GoogleAdsTag /></body>
+      <body>{children}<GoogleAdsTag />
+        <PromoModal /></body>
     </html>
   )
 }
