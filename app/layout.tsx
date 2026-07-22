@@ -1,6 +1,5 @@
 import PromoModal from './PromoModal'
-import PromoModal from './PromoModal'
-import PromoModal from './PromoModal'
+import InstagramSideTab from './InstagramSideTab'
 import GoogleAdsTag from './GoogleAdsTag'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -82,8 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>{children}<GoogleAdsTag />
         <PromoModal />
-        <PromoModal />
-        <PromoModal /></body>
+        <InstagramSideTab /></body>
     </html>
   )
 }
