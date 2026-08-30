@@ -143,7 +143,7 @@ export default function Home() {
       <div className="price-card reveal">
         <span className="tag">Studio Pricing</span>
         <h3>Eyelash Extensions</h3>
-        <span className="role">Maryna Belova &amp; Valentina · Studio Artists</span>
+        <span className="role">Maryna Belova · Studio Artist</span>
         <div className="price-rows">
           <div className="price-row"><span className="name">Classic<small>Classic lash extensions</small></span><span className="amount">$100–$120</span></div>
           <div className="price-row"><span className="name">Hybrid<small>Hybrid volume</small></span><span className="amount">$120–$150</span></div>
@@ -366,7 +366,7 @@ export default function Home() {
       <div className="booking-grid">
         <div>
           <span className="eyebrow">Book Your Appointment</span>
-          <h2 style={{marginTop:'14px',fontSize:'clamp(1.9rem,3.4vw,2.6rem)'}}>Book with Maryna or Valentina</h2>
+          <h2 style={{marginTop:'14px',fontSize:'clamp(1.9rem,3.4vw,2.6rem)'}}>Book with Maryna</h2>
           <p style={{marginTop:'16px',color:'var(--cream-soft)',maxWidth:'460px'}}>Send a request through the form, or pick whichever contact method suits you — we'll get back to you as soon as possible.</p>
           <div style={{marginTop:'32px'}}>
             <button className="btn btn-gold" id="openBookingMain">Open Booking Form</button>
@@ -522,7 +522,6 @@ export default function Home() {
             <select required>
               <option value="">No preference</option>
               <option>Maryna Belova</option>
-              <option>Valentina</option>
             </select>
           </div>
           <div className="field">
