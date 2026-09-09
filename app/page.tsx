@@ -28,7 +28,7 @@ export default function Home() {
       <a href="#contacts">Contact</a>
     </nav>
     <div className="header-cta">
-      <a className="btn btn-gold btn-sm" href="https://dikidi.net/614543" target="_blank" rel="noopener">Book Now</a>
+      <a className="btn btn-gold btn-sm" href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener">Book Now</a>
       <button className="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -55,7 +55,7 @@ export default function Home() {
       <h1>Your eyes&nbsp;— <em>they're the first</em>,<br />thing people notice</h1>
       <p className="lede">BELOVA is Maryna Belova's eyelash extension studio and her own line of professional lash supplies. From one lash artist at a single station — to a brand trusted by lash artists worldwide.</p>
       <div className="hero-ctas">
-        <a className="btn btn-gold" href="https://dikidi.net/614543" target="_blank" rel="noopener">Book an Appointment</a>
+        <a className="btn btn-gold" href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener">Book an Appointment</a>
         <a href="#products" className="btn btn-ghost">Shop Products</a>
       </div>
       <div className="hero-stats">
@@ -311,7 +311,7 @@ export default function Home() {
       <h2>What Clients &amp; Students Say</h2>
       <div className="rating-badges">
         <span className="rating-badge"><span className="stars">★★★★★</span> 5.0 on Google</span>
-        <span className="rating-badge"><span className="stars">★★★★★</span> 5/5 on DIKIDI · 9 ratings</span>
+        <span className="rating-badge"><span className="stars">★★★★★</span> 5/5 on Square · 9 ratings</span>
       </div>
     </div>
     <div className="reviews-grid">
@@ -376,9 +376,9 @@ export default function Home() {
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <span className="txt"><b>Call Directly</b><span>+1 289 795 4370</span></span>
             </a>
-            <a className="quick-action" href="https://dikidi.net/614543" target="_blank" rel="noopener">
+            <a className="quick-action" href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener">
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-              <span className="txt"><b>Book via DIKIDI</b><span>Online booking · 5/5 rating</span></span>
+              <span className="txt"><b>Book via Square</b><span>Online booking · 5/5 rating</span></span>
             </a>
             <a className="quick-action" href="https://instagram.com/belova.lash.brow" target="_blank" rel="noopener">
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
@@ -463,7 +463,7 @@ export default function Home() {
       </div>
       <div className="footer-col">
         <h5>Booking</h5>
-        <a href="https://dikidi.net/614543" target="_blank" rel="noopener">DIKIDI · online booking</a>
+        <a href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener">Square · online booking</a>
         <span className="line">Rating 5/5 · 9 ratings · 6 reviews</span>
         <span className="line">Open daily from 9:00 AM</span>
       </div>
@@ -476,7 +476,7 @@ export default function Home() {
 </footer>
 
 {/* ============ FAB ============ */}
-<a className="fab" id="fabBtn" href="https://dikidi.net/614543" target="_blank" rel="noopener" aria-label="Book Now">
+<a className="fab" id="fabBtn" href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener" aria-label="Book Now">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>
 </a>
 
@@ -548,10 +548,10 @@ export default function Home() {
         <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6 9 17l-5-5"/></svg>
       </div>
       <h4>Request Received!</h4>
-      <p>We'll be in touch shortly to confirm. Need it sooner? Call us or book directly through DIKIDI.</p>
+      <p>We'll be in touch shortly to confirm. Need it sooner? Call us or book directly through Square.</p>
       <div style={{display:'flex',gap:'12px',justifyContent:'center',marginTop:'22px',flexWrap:'wrap'}}>
         <a href="tel:+12897954370" className="btn btn-ghost btn-sm">Call Us</a>
-        <a href="https://dikidi.net/614543" target="_blank" rel="noopener" className="btn btn-gold btn-sm">DIKIDI</a>
+        <a href="https://belova-lash-studio.square.site/" target="_blank" rel="noopener" className="btn btn-gold btn-sm">Square</a>
       </div>
     </div>
 

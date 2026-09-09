@@ -52,7 +52,7 @@ const jsonLd = {
     'https://www.instagram.com/belova.lash.brow',
     'https://www.instagram.com/belova.brand_official',
     'https://belovalashstore.ca',
-    'https://dikidi.net/614543',
+    'https://belova-lash-studio.square.site/',
   ],
   aggregateRating: {
     '@type': 'AggregateRating',

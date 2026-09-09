@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
           </Section>
 
           <Section title="8. Third-Party Links">
-            <p>Our website contains links to third-party sites (Instagram, DIKIDI, belovalashstore.ca). We are not responsible for the privacy practices of these sites and encourage you to review their privacy policies.</p>
+            <p>Our website contains links to third-party sites (Instagram, Square, belovalashstore.ca). We are not responsible for the privacy practices of these sites and encourage you to review their privacy policies.</p>
           </Section>
 
           <Section title="9. Children's Privacy">

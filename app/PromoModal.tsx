@@ -170,7 +170,7 @@ export default function PromoModal() {
           </p>
 
           <a
-            href="https://dikidi.net/614543"
+            href="https://belova-lash-studio.square.site/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
