@@ -80,37 +80,6 @@ export default function SiteScripts() {
     )
     counters.forEach((el) => countIO.observe(el))
 
-    // ---------- booking modal ----------
-    const modal = document.getElementById('bookingModal')
-    const openBtn = document.getElementById('openBookingMain')
-
-    const openModal = () => {
-      modal?.classList.add('open')
-      document.body.style.overflow = 'hidden'
-    }
-    const closeModal = () => {
-      modal?.classList.remove('open')
-      document.body.style.overflow = ''
-    }
-
-    openBtn?.addEventListener('click', openModal)
-    document.getElementById('closeModal')?.addEventListener('click', closeModal)
-    modal?.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal()
-    })
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal?.classList.contains('open')) closeModal()
-    })
-
-    const bookingForm = document.getElementById('bookingForm') as HTMLFormElement | null
-    bookingForm?.addEventListener('submit', (e) => {
-      e.preventDefault()
-      const formView = document.getElementById('formView')
-      const successView = document.getElementById('successView')
-      if (formView) formView.style.display = 'none'
-      successView?.classList.add('show')
-    })
-
     // ---------- FAB visibility ----------
     const fab = document.getElementById('fabBtn')
     const onScroll = () => {

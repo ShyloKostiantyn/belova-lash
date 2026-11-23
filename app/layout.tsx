@@ -47,7 +47,8 @@ const jsonLd = {
     addressCountry: 'CA',
   },
   areaServed: ['Mississauga', 'Toronto', 'Port Credit'],
-  priceRange: '$100-$180',
+  priceRange: '$70-$180',
+  openingHours: 'Mo-Su 09:00-20:00',
   sameAs: [
     'https://www.instagram.com/belova.lash.brow',
     'https://www.instagram.com/belova.brand_official',

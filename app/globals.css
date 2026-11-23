@@ -334,18 +334,28 @@ nav.main-nav a:hover::after{width:100%;}
 /* ============ PRICING ============ */
 .price-grid{
   display:flex;
+  flex-wrap:wrap;
   justify-content:center;
+  align-items:stretch;
+  gap:24px;
 }
 .price-card{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:20px;
-  padding:42px 48px;
+  padding:40px 34px;
   position:relative;
   overflow:hidden;
-  max-width:580px;
-  width:100%;
+  flex:1 1 320px;
+  max-width:420px;
+  display:flex;
+  flex-direction:column;
+  scroll-margin-top:110px;
 }
+.price-card .price-rows{flex:1;}
+.price-grid .price-card .tag{position:static;align-self:flex-start;margin-bottom:16px;}
+.price-row .amount small{display:block;font-family:var(--font-body);font-size:0.72rem;color:var(--cream-faint);text-align:right;margin-top:2px;}
+.price-card .price-cta{margin-top:22px;align-self:flex-start;}
 .price-card::before{
   content:'';position:absolute;top:0;left:0;right:0;height:2px;
   background:linear-gradient(90deg,transparent,var(--gold-2),transparent);
