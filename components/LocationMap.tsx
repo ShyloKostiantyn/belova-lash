@@ -4,7 +4,7 @@
 export const MAPS_PLACE_URL = 'https://maps.google.com/?cid=11723274318444420885'
 
 const EMBED_URL =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450!2d-79.5842194!3d43.5533341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b47692d408461%3A0xa2b16fe14b56df15!2sBelova%20Lash%20Studio!5e0!3m2!1sen!2sca!4v1795540000000!5m2!1sen!2sca'
+  'https://maps.google.com/maps?q=Belova%20Lash%20Studio%2C%2092%20Lakeshore%20Rd%20E%20Unit%205A%2C%20Mississauga%2C%20ON%20L5G%204S2&ll=43.5533341,-79.5842194&z=16&hl=en&output=embed'
 
 export default function LocationMap() {
   return (
