@@ -170,7 +170,7 @@ export default function PromoModal() {
           </p>
 
           <a
-            href="https://belova-lash-studio.square.site/"
+            href="https://ibooker.online/belova/location/LFDHNJ25H8FKG/services"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}

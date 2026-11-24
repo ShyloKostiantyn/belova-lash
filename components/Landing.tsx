@@ -2,7 +2,9 @@ import SiteScripts from '@/components/SiteScripts'
 
 import LocationMap from '@/components/LocationMap'
 
-const SQUARE_URL = 'https://belova-lash-studio.square.site/'
+// Online booking: iBooker page synced with Square (bookings land in Square).
+// GoogleAdsTag adds gclid/utm and GA4 cross-domain (_gl) on click.
+const BOOKING_URL = 'https://ibooker.online/belova/location/LFDHNJ25H8FKG/services'
 
 type Variant = 'home' | 'lift'
 
@@ -18,7 +20,7 @@ function PriceCards({ variant }: { variant: Variant }) {
         <div className="price-row"><span className="name">Volume / Mega<small>Full set · 2 hr 30 min</small></span><span className="amount">$180<small>Refill $150</small></span></div>
       </div>
       <div className="price-note">Refill every 2–3 weeks, with at least 50–70% of your extensions remaining.</div>
-      <a className="btn btn-gold btn-sm price-cta" href={SQUARE_URL} target="_blank" rel="noopener">Book Extensions</a>
+      <a className="btn btn-gold btn-sm price-cta" href={BOOKING_URL} target="_blank" rel="noopener">Book Extensions</a>
     </div>
   )
   const lift = (
@@ -31,7 +33,7 @@ function PriceCards({ variant }: { variant: Variant }) {
         <div className="price-row"><span className="name">Lash Lift + Tint<small>Lifted, curled, mascara-like look · 1 hr</small></span><span className="amount">$100</span></div>
       </div>
       <div className="price-note">A clean, natural, open-eye look without extensions — perfect if you want low-maintenance lashes.</div>
-      <a className="btn btn-gold btn-sm price-cta" href={SQUARE_URL} target="_blank" rel="noopener">Book a Lash Lift</a>
+      <a className="btn btn-gold btn-sm price-cta" href={BOOKING_URL} target="_blank" rel="noopener">Book a Lash Lift</a>
     </div>
   )
   const brows = (
@@ -44,7 +46,7 @@ function PriceCards({ variant }: { variant: Variant }) {
         <div className="price-row"><span className="name">Brow Lamination, Shaping &amp; Tint<small>1 hr</small></span><span className="amount">$100</span></div>
       </div>
       <div className="price-note">Defined, well-groomed brows that stay in place longer.</div>
-      <a className="btn btn-gold btn-sm price-cta" href={SQUARE_URL} target="_blank" rel="noopener">Book Brows</a>
+      <a className="btn btn-gold btn-sm price-cta" href={BOOKING_URL} target="_blank" rel="noopener">Book Brows</a>
     </div>
   )
   return <>{variant === 'lift' ? [lift, extensions, brows] : [extensions, lift, brows]}</>
@@ -57,7 +59,7 @@ function Pricing({ variant }: { variant: Variant }) {
         <div className="section-head reveal">
           <span className="eyebrow">Services &amp; Pricing</span>
           <h2>{variant === 'lift' ? 'Lash Lift & Tint in Port Credit, Mississauga' : 'Lash Extensions, Lash Lift & Brows'}</h2>
-          <p>Prices in CAD. Book online through Square — pick your service, artist and time.</p>
+          <p>Prices in CAD. Book online — pick your service, artist and time.</p>
         </div>
         <div className="price-grid">
           <PriceCards variant={variant} />
@@ -98,7 +100,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
       <a href="#contacts">Contact</a>
     </nav>
     <div className="header-cta">
-      <a className="btn btn-gold btn-sm" href={SQUARE_URL} target="_blank" rel="noopener">Book Now</a>
+      <a className="btn btn-gold btn-sm" href={BOOKING_URL} target="_blank" rel="noopener">Book Now</a>
       <button className="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -128,7 +130,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
           <h1>Korean Lash Lift <em>&amp; Tint</em>,<br />no extensions needed</h1>
           <p className="lede">Your natural lashes — lifted from the roots, curled and darker for a clean, open-eye look. Korean Lash Lift + Tint or classic Lash Lift + Tint, $100, about 1 hour at Belova Lash Studio.</p>
           <div className="hero-ctas">
-            <a className="btn btn-gold" href={SQUARE_URL} target="_blank" rel="noopener">Book a Lash Lift</a>
+            <a className="btn btn-gold" href={BOOKING_URL} target="_blank" rel="noopener">Book a Lash Lift</a>
             <a href="#lash-lift" className="btn btn-ghost">See Lash Lift Pricing</a>
           </div>
         </>
@@ -138,7 +140,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
           <h1>Your eyes&nbsp;— <em>they're the first</em>,<br />thing people notice</h1>
           <p className="lede">BELOVA is Maryna Belova's eyelash extension studio and her own line of professional lash supplies. From one lash artist at a single station — to a brand trusted by lash artists worldwide.</p>
           <div className="hero-ctas">
-            <a className="btn btn-gold" href={SQUARE_URL} target="_blank" rel="noopener">Book an Appointment</a>
+            <a className="btn btn-gold" href={BOOKING_URL} target="_blank" rel="noopener">Book an Appointment</a>
             <a href="#products" className="btn btn-ghost">Shop Products</a>
           </div>
         </>
@@ -428,18 +430,18 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
         <div>
           <span className="eyebrow">Book Your Appointment</span>
           <h2 style={{marginTop:'14px',fontSize:'clamp(1.9rem,3.4vw,2.6rem)'}}>Book Online in a Minute</h2>
-          <p style={{marginTop:'16px',color:'var(--cream-soft)',maxWidth:'460px'}}>Choose your service, artist and time in our Square booking — Maryna Belova or Viki. Prefer to talk? Call us 10 AM – 5 PM.</p>
+          <p style={{marginTop:'16px',color:'var(--cream-soft)',maxWidth:'460px'}}>Choose your service, artist and time in our online booking — Maryna Belova or Viki. Prefer to talk? Call us 10 AM – 5 PM.</p>
           <div style={{marginTop:'32px'}}>
-            <a className="btn btn-gold" href={SQUARE_URL} target="_blank" rel="noopener">Book on Square</a>
+            <a className="btn btn-gold" href={BOOKING_URL} target="_blank" rel="noopener">Book Online</a>
           </div>
           <div className="quick-actions">
             <a className="quick-action" href="tel:+12897954370" data-phone-link="">
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <span className="txt"><b>Call 10 AM – 5 PM</b><span data-phone-text="">+1 289 795 4370</span></span>
             </a>
-            <a className="quick-action" href={SQUARE_URL} target="_blank" rel="noopener">
+            <a className="quick-action" href={BOOKING_URL} target="_blank" rel="noopener">
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-              <span className="txt"><b>Book via Square</b><span>Online booking · 5/5 rating</span></span>
+              <span className="txt"><b>Book Online</b><span>Online booking · 5/5 rating</span></span>
             </a>
             <a className="quick-action" href="https://instagram.com/belova.lash.brow" target="_blank" rel="noopener">
               <span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
@@ -524,7 +526,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
       </div>
       <div className="footer-col">
         <h5>Booking</h5>
-        <a href={SQUARE_URL} target="_blank" rel="noopener">Square · online booking</a>
+        <a href={BOOKING_URL} target="_blank" rel="noopener">Online booking</a>
         <span className="line">Rating 5/5 · 9 ratings · 6 reviews</span>
         <span className="line">Open daily 9:00 AM – 8:00 PM</span>
         <span className="line">Calls 10:00 AM – 5:00 PM</span>
@@ -538,7 +540,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
 </footer>
 
 {/* ============ FAB ============ */}
-<a className="fab" id="fabBtn" href={SQUARE_URL} target="_blank" rel="noopener" aria-label="Book Now">
+<a className="fab" id="fabBtn" href={BOOKING_URL} target="_blank" rel="noopener" aria-label="Book Now">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>
 </a>
 
