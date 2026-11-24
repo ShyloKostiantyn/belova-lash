@@ -46,6 +46,8 @@ const jsonLd = {
     postalCode: 'L5G 4S2',
     addressCountry: 'CA',
   },
+  geo: { '@type': 'GeoCoordinates', latitude: 43.5533341, longitude: -79.5842194 },
+  hasMap: 'https://maps.google.com/?cid=11723274318444420885',
   areaServed: ['Mississauga', 'Toronto', 'Port Credit'],
   priceRange: '$70-$180',
   openingHours: 'Mo-Su 09:00-20:00',

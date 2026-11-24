@@ -1,67 +1,20 @@
-'use client'
+// Google Maps embed of the studio's own Business Profile place
+// (Belova Lash Studio, 92 Lakeshore Rd E Unit 5A — name, rating and reviews
+// show in the card), instead of a plain address pin.
+export const MAPS_PLACE_URL = 'https://maps.google.com/?cid=11723274318444420885'
 
-import { useEffect, useRef } from 'react'
+const EMBED_URL =
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450!2d-79.5842194!3d43.5533341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b47692d408461%3A0xa2b16fe14b56df15!2sBelova%20Lash%20Studio!5e0!3m2!1sen!2sca!4v1795540000000!5m2!1sen!2sca'
 
 export default function LocationMap() {
-  const mapRef = useRef<HTMLDivElement>(null)
-  const initRef = useRef(false)
-
-  useEffect(() => {
-    if (initRef.current || !mapRef.current) return
-    initRef.current = true
-
-    import('leaflet').then((L) => {
-      // Fix Leaflet default icon paths broken by webpack
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      delete (L.Icon.Default.prototype as any)._getIconUrl
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
-        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-      })
-
-      const studio: [number, number] = [43.5571, -79.5884]
-
-      const map = L.map(mapRef.current!, {
-        scrollWheelZoom: false,
-        zoomControl: true,
-      }).setView(studio, 16)
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-      }).addTo(map)
-
-      const goldPin = L.divIcon({
-        className: 'belova-map-pin',
-        html: `<svg width="36" height="46" viewBox="0 0 36 46" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 0C8.06 0 0 8.06 0 18c0 13.5 18 28 18 28s18-14.5 18-28C36 8.06 27.94 0 18 0z" fill="#c9a35f"/>
-          <circle cx="18" cy="17" r="7" fill="#0a1b13"/>
-        </svg>`,
-        iconSize: [36, 46],
-        iconAnchor: [18, 46],
-        popupAnchor: [0, -40],
-      })
-
-      L.marker(studio, { icon: goldPin })
-        .addTo(map)
-        .bindPopup(
-          '<strong>BELOVA Lash Brand</strong><br>92 Lakeshore Rd E, Unit 5A<br>Mississauga, ON L5G 4S2'
-        )
-        .openPopup()
-
-      map.on('click', () => map.scrollWheelZoom.enable())
-    })
-  }, [])
-
   return (
-    <div
-      ref={mapRef}
-      id="leafletMap"
-      role="img"
-      aria-label="Map showing the BELOVA Lash Brand studio location at 92 Lakeshore Rd E, Mississauga"
-      style={{ width: '100%', height: '100%', minHeight: '360px' }}
+    <iframe
+      src={EMBED_URL}
+      title="Belova Lash Studio on Google Maps — 92 Lakeshore Rd E, Unit 5A, Mississauga"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      allowFullScreen
+      style={{ width: '100%', height: '100%', minHeight: '360px', border: 0, display: 'block' }}
     />
   )
 }

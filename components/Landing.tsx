@@ -1,6 +1,6 @@
 import SiteScripts from '@/components/SiteScripts'
 
-import LocationMap from '@/components/LocationMap'
+import LocationMap, { MAPS_PLACE_URL } from '@/components/LocationMap'
 
 // Online booking: iBooker page synced with Square (bookings land in Square).
 // GoogleAdsTag adds gclid/utm and GA4 cross-domain (_gl) on click.
@@ -485,7 +485,7 @@ export default function Landing({ variant = 'home' }: { variant?: Variant }) {
             <span>92 Lakeshore Rd E, Unit 5A<br />Mississauga, ON L5G 4S2</span>
           </div>
         </div>
-        <a className="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=92+Lakeshore+Rd+E+Unit+5A+Mississauga+ON+L5G+4S2" target="_blank" rel="noopener" style={{alignSelf:'flex-start'}}>
+        <a className="btn btn-gold" href={MAPS_PLACE_URL} target="_blank" rel="noopener" style={{alignSelf:'flex-start'}}>
           Get Directions
           <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" strokeWidth="2" style={{width:'16px',height:'16px',marginLeft:'2px'}}><path d="M7 17 17 7M9 7h8v8"/></svg>
         </a>
